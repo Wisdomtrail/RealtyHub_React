@@ -1,0 +1,103 @@
+.mainContainer{
+    display: flex;
+}
+
+.sideNav{
+    width: 40%;
+    height: 100%;
+    background-color: #030353;
+}
+
+.update{
+    cursor: pointer;
+}
+.imageContainer img{
+    border-radius: 600px;
+    height: 1%;
+    width: 30%;
+    margin-top: 10%;
+}
+.white-icon{
+    color: white;
+}
+.imageContainer button :hover{
+    cursor: pointer;
+}
+.imageContainer button{
+    background-color: #030353;
+
+    color: white;
+    border-radius: 10px;
+}
+#upload{
+    margin-left: 20%;
+}
+.options{
+    margin-right: 20%;
+    margin-top: 20%;
+}
+#profile{
+    margin-left: 20%;
+}
+.options button{
+    font-size: larger;
+    font-weight: 900;background-color: #030353;
+    border: none;
+    margin-top: 0%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.options :hover{
+    color: black;
+    cursor: pointer;
+}
+.user{
+    margin-right: 17%;
+}
+.settings{
+    margin-right: 9%;
+}
+
+.properties{
+    display: flex;
+}.properties div {
+    height: 12cm;
+    width: 8cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 10%;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .properties div:hover {
+    transform: translateY(-9px);
+  }
+  
+.user{
+    margin-right: 39%;
+}
+#heart{
+    margin-left: 20%;
+}
+.settings{
+    margin-right: 30%;
+}
+.prop{
+    margin-right: 24%;
+}
+.home{
+    margin-right: 20%;
+}
+  .rightNav input{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 1%;
+    height: 2cm;
+    width: 90%;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: larger;
+  }
