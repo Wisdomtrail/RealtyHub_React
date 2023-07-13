@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import SignUp from './dashboard/component/SignUp.jsx';
+import SignUp from './dashboard/component/LandingPage.jsx';
 
 function App() {
   return (
