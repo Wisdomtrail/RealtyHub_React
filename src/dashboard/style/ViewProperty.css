@@ -1,0 +1,126 @@
+
+.property{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    height: 650px;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 1250px;
+    display: flex;
+    border-radius: 10px;
+}
+.topDiv{
+    display: flex;
+}
+.topDiv p{
+    margin-top: 25px;
+    color: rgb(0, 98, 163);
+    font-weight: bold;
+}
+.topDiv :hover{
+    color:  rgb(0, 60, 100);
+    cursor: pointer;
+}
+.fa{
+    margin-top: 30px;
+    margin-right: 9px;
+    color: rgb(0, 98, 163);
+    margin-left: 90px;
+}
+.property div img{
+    background-color: rgb(0, 153, 255);
+    height: 270px;
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 90px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.imagesDiv{
+    margin-left: 10px;
+    margin-right: 1px;
+    border-right: 4px solid black;
+}
+.request{
+    margin-left: 120px;
+    margin-right: 60px;
+    background-color:  rgb(0, 98, 163);
+    color: white;
+}
+.tour{
+    background-color: white;
+    color:  rgb(0, 98, 163);
+}
+.request:hover{
+    color:  rgb(0, 98, 163);
+    background-color:  white;
+    cursor: pointer;
+}
+.tour:hover{
+    background-color:  rgb(0, 98, 163);
+    color: white;
+    cursor: pointer;
+}
+.description h2{
+    color:  rgb(0, 98, 163);
+    margin-right: 40px;
+    font-style: italic;
+}
+.description button{
+    position: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.imagesContainer {
+    height: 650px; 
+    overflow-y: auto; 
+  }
+  
+  .imagesDiv {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .imagesDiv img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .enlargedImageContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .enlargedImageContent {
+    background-color: white;
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+  }
+  
+  .enlargedImageContent img {
+    width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  

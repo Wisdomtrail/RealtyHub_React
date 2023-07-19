@@ -1,4 +1,4 @@
-.mainContainer {
+.container {
   height: 100vh;
 }
 
@@ -13,8 +13,8 @@
 .f{
   display: flex;
   justify-content: center;
+ 
 }
-
 .f div{
   height: 300px;
   width: 370px;
@@ -22,6 +22,7 @@
   border-radius: 30px;
   margin-bottom: 1cm;
   margin-left: 1cm;
+  cursor: pointer;
 }
 
 .s{
@@ -37,6 +38,7 @@
   justify-content: space-between;
   margin-bottom: 1cm;
   margin-left: 1cm;
+  cursor: pointer;
 }
 
 .dropdown {
@@ -82,6 +84,7 @@
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+
 
 .imgContainer div img:hover{
   cursor: pointer;

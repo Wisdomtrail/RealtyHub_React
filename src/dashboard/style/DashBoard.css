@@ -3,9 +3,9 @@
 }
 
 .sideNav{
-    width: 40%;
+    width: 50%;
     height: 100%;
-    background-color: #030353;
+    background-color: rgb(0, 98, 163);
 }
 
 .update{
@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 .imageContainer button{
-    background-color: #030353;
+    background-color: rgb(0, 98, 163);
 
     color: white;
     border-radius: 10px;
@@ -41,7 +41,7 @@
 }
 .options button{
     font-size: larger;
-    font-weight: 900;background-color: #030353;
+    font-weight: 900;background-color: rgb(0, 98, 163);
     border: none;
     margin-top: 0%;
     border-radius: 20px;
@@ -69,12 +69,12 @@
     margin-top: 10%;
     background-color: white;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transition:  0.6s ease;
   }
   
   .properties div:hover {
-    transform: translateY(-9px);
+    transform: translateY(-20px);
   }
   
 .user{
@@ -97,7 +97,25 @@
     margin-top: 1%;
     height: 2cm;
     width: 90%;
-    border-radius: 50px;
+    background-color: rgb(246, 246,246);
+    margin-left: 20px;
+    border-right: none;
     font-weight: 500;
     font-size: larger;
   }
+  .flex{
+      display: flex;
+  }
+  .searchButton{
+      margin-right: 200px;
+      margin-bottom: 10px;
+      height: 100px;
+      height: 2.06cm;
+      margin-top: 11px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      box-shadow: none;
+      border: 1px solid  black;
+      border-left: none;
+      cursor: pointer;
+  }
+  

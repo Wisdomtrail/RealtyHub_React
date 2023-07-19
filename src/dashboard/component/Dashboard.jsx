@@ -1,10 +1,23 @@
 import React from "react";
 import '../style/DashBoard.css';
+import searchButton from '../assets/image/searchButton.jpeg';
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFloppyDisk, faCloudArrowUp, faHeart, faHome, faUser, faCog } from '@fortawesome/free-solid-svg-icons';
 import defaultImage from '../assets/image/defaultImage.jpeg';
 
 const DashBoard = () => {
+
+  const navigate = useNavigate()
+
+  const search = () => {
+
+  }
+
+  const viewProperty = () =>{
+    navigate('/dashboard/viewProperty')
+  }
+
   return (
     <div className="mainContainer">
       <div className="sideNav">
@@ -28,13 +41,13 @@ const DashBoard = () => {
         </div>
       </div>
       <div className="rightNav">
-        <div>
-          <div><input type="text" placeholder="Enter address, postal code or Price" /></div>
+        <div >
+          <div className="flex"><input type="text" placeholder="Enter address, postal code or Price" /> <img className="searchButton" src={searchButton} alt="" onClick={search} /></div>
         </div>
         <div className="properties">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div onClick={viewProperty}></div>
+          <div onClick={viewProperty}></div>
+          <div onClick={viewProperty}></div>
         </div>
       </div>
     </div>

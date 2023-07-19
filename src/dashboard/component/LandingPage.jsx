@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../style/SignUp.css";
 import house from "../assets/image/house.jpeg";
 import searchButton from '../assets/image/searchButton.jpeg';
@@ -9,7 +10,7 @@ const SignUp = () => {
   const [isBlurry, setIsBlurry] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate()
   const openRegistrationForm = () => {
     setIsRegistrationOpen(!isRegistrationOpen);
     setIsLoginOpen(false);
@@ -22,7 +23,7 @@ const SignUp = () => {
       password: password
     };
   
-    fetch('http://localhost:8080/api/v1/user/register', {
+    fetch('http://localhost:8080/api/v1/user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -36,6 +37,7 @@ const SignUp = () => {
       .catch(error => {
         console.error(error);
       });
+      navigate('/dashboard')
   };
   
   const search = () => {
@@ -70,7 +72,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className={`mainContainer ${isBlurry ? "blurry" : ""}`}>
+    <div className={`container ${isBlurry ? "blurry" : ""}`}>
       <div className="topNav">
         <h2>RealtyHub</h2>
         <button onClick={openRegistrationForm}>Register</button>
@@ -86,7 +88,7 @@ const SignUp = () => {
           <img src={searchButton} alt="" onClick={search} />
         </div>
       </div>
-      <div className="properties">
+      <div className="properties1">
         <div className="f">
           <div></div>
           <div></div>
@@ -96,7 +98,7 @@ const SignUp = () => {
           <div></div>
           <div></div>
           <div></div>
-        </div>
+        </div>  
       </div>
       {isRegistrationOpen && (
         <div className="formContainer">
