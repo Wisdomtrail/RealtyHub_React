@@ -123,4 +123,6 @@
     font-size: 20px;
     cursor: pointer;
   }
-  
+  .searchContainer input{
+    outline: none;
+  }

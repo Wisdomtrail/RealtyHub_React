@@ -1,121 +1,225 @@
-.mainContainer{
+/* DashBoard.css */
+
+.mainContainer {
     display: flex;
-}
-
-.sideNav{
-    width: 50%;
-    height: 100%;
-    background-color: rgb(0, 98, 163);
-}
-
-.update{
-    cursor: pointer;
-}
-.imageContainer img{
-    border-radius: 600px;
-    height: 1%;
-    width: 30%;
-    margin-top: 10%;
-}
-.white-icon{
-    color: white;
-}
-.imageContainer button :hover{
-    cursor: pointer;
-}
-.imageContainer button{
-    background-color: rgb(0, 98, 163);
-
-    color: white;
-    border-radius: 10px;
-}
-#upload{
-    margin-left: 20%;
-}
-.options{
-    margin-right: 20%;
-    margin-top: 20%;
-}
-#profile{
-    margin-left: 20%;
-}
-.options button{
-    font-size: larger;
-    font-weight: 900;background-color: rgb(0, 98, 163);
-    border: none;
-    margin-top: 0%;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .topNav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005ca3;
+    color: #fff;
+    padding: 10px 20px;
+    border: 5px solid rgb(249, 249, 250);
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: white;
-}
-.options :hover{
-    color: black;
-    cursor: pointer;
-}
-.user{
-    margin-right: 17%;
-}
-.settings{
-    margin-right: 9%;
-}
-
-.properties{
+  }
+  
+  .options {
     display: flex;
-}.properties div {
-    height: 12cm;
-    width: 8cm;
-    margin-left: 1cm;
-    margin-right: 1cm;
-    margin-top: 10%;
+    align-items: center;
+  }
+  
+  
+  .options h1 {
+    font-size: 30px;
+    margin-right: 70px;
+    margin-right: 220px;
+  }
+  
+  .options button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+.home.active {
+    color: rgb(0, 98, 163);
     background-color: white;
-    border-radius: 40px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    transition:  0.6s ease;
+}
+  
+  
+  .options button:hover {
+    color: #005ca3;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .notification{
+    height: 20px;
+  }
+  .notification :hover{
+    cursor: pointer;
+  }
+  .home {
+    font-weight: bold;
   }
   
-  .properties div:hover {
-    transform: translateY(-20px);
+  .prop {
+    font-weight: bold;
   }
   
-.user{
-    margin-right: 39%;
-}
-#heart{
-    margin-left: 20%;
-}
-.settings{
-    margin-right: 30%;
-}
-.prop{
-    margin-right: 24%;
-}
-.home{
-    margin-right: 20%;
-}
-  .rightNav input{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-top: 1%;
-    height: 2cm;
-    width: 90%;
-    background-color: rgb(246, 246,246);
+  .user,
+  .settings {
+    display: flex;
+    align-items: center;
+  }
+  .options button{
+    margin-right: 20px;
+  }
+  .user .icon,
+  .settings .icon {
+    margin-right: 5px;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
     margin-left: 20px;
-    border-right: none;
-    font-weight: 500;
-    font-size: larger;
-  }
-  .flex{
-      display: flex;
-  }
-  .searchButton{
-      margin-right: 200px;
-      margin-bottom: 10px;
-      height: 100px;
-      height: 2.06cm;
-      margin-top: 11px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      box-shadow: none;
-      border: 1px solid  black;
-      border-left: none;
-      cursor: pointer;
   }
   
+  .search-input {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    width: 300px;
+    outline: none;
+    transition: all 0.2s;
+  }
+  
+  .search-input::placeholder {
+    color: #999;
+  }
+  
+  .search-input:focus {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search-container input{
+    height: 50px;
+    width: 850px;
+  }
+
+  .search-button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    height: 70px;
+    width: 60px;
+    padding: 10px;
+    transition: all 0.2s;
+  }
+  .properties-section{
+    background-color: rgb(255, 255, 255);
+  }
+  .search-button:hover {
+    background-color: #ddd;
+  }
+  
+  
+  .icon {
+    font-size: 20px;
+  }
+  
+  .properties-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .properties-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .property-card {
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .property-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .property-details {
+    margin-top: 10px;
+  }
+  
+  .property-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .property-address {
+    color: #666;
+  }
+  
+  .home .icon:before {
+    content: "\f015"; 
+  }
+  
+  .user .icon:before {
+    content: "\f007"; 
+  }
+  
+  .settings .icon:before {
+    content: "\f013";
+  }
+  
+  .prop .icon:before {
+    content: "\f015";
+  }
+  
+  .prop .icon {
+    margin-right: 8px;
+  }
+  .no-properties{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 200%;
+    font-size: 30px;
+   color: rgb(87, 8, 8);
+  }
+.property-details div{
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(0, 98, 163);
+}

@@ -1,0 +1,23 @@
+.confirmation-page {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .confirmation-page h2 {
+    
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-page p {
+    color: #555;
+    font-size: 18px;
+  }
+  

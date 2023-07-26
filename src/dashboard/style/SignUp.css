@@ -16,7 +16,7 @@
  
 }
 .f div{
-  height: 300px;
+  height: 400px;
   width: 370px;
   background-color: silver;
   border-radius: 30px;
@@ -29,9 +29,14 @@
   display: flex;
   justify-content: center;
 }
-
+.loading{
+  color: rgb(41, 41, 255);
+}
+.error{
+  color: red;
+}
 .s div{
-  height: 300px;
+  height: 500px;
   width: 370px;
   background-color:silver;
   border-radius: 30px;
@@ -74,29 +79,30 @@
   justify-content: center;
   flex-direction: column;
 }
-.imgContainer div{
-  display: flex;
-} 
+
 .imgContainer div img{
-  height: 75px;
-  border: 5px solid white;
-  
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  margin-top: 100px;
+  height: 84px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-
-
+.searchContainer{
+  display: flex;
+}
 .imgContainer div img:hover{
   cursor: pointer;
 }
 .imgContainer div input{
   color: rgb(0, 0, 0);
+  border: 2px solid red;
   height: 80px;
   border: 1px solid white;
   width: 900px;
+  margin-top: 100px;
   font-size: 20px;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 190px;
 }
 .imgContainer .content {
   text-align: center;
@@ -104,17 +110,18 @@
 
 .imgContainer h1 {
   color: white;
-
 }
-
-.searchBox input {
-  height: 30px;
-  width: 400px;
-  padding: 5px;
-  margin-right: 10px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 93px;
+  width: 100%;
+  height: 433px;
+  background-color: rgba(0, 0, 0, 0.274); 
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 .form{
   background-color: white;
@@ -177,7 +184,7 @@
   margin-right: 600px;
   font-size: 40px;
   font-style: italic;
-  color: rgb(26, 26, 209);
+  color: rgb(0, 98, 163);
 }
 .imgContainer h1 {
   margin-bottom: 20px;
@@ -188,21 +195,7 @@
   margin-bottom: 20px;
 }
 
-.searchBox input {
-  height: 30px;
-  width: 400px;
-  padding: 5px;
-  margin-right: 10px;
-}
 
-.searchBox button {
-  height: 30px;
-  width: 50px;
-  padding: 5px 20px;
-  border: none;
-  background-color: rgb(63, 63, 247);
-  color: white;
-}
 
 .gridContainer {
   display: grid;
@@ -219,6 +212,7 @@
   position: relative;
   height: 100vh;
 }
+
 
 .topNav {
   position: relative;
@@ -280,10 +274,8 @@
   align-items: center;
 }
 
-
-
-
 .welcome {
   color: white;
+  margin-top: 90px;
 }
  
