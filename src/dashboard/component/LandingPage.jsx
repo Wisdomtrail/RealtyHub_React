@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../style/SignUp.css";
-import house from "../assets/image/house.jpeg";
 import searchButton from '../assets/image/searchButton.jpeg';
 
 const SignUp = () => {
@@ -71,18 +70,21 @@ const SignUp = () => {
 
   return (
     <div className={`mainContainer ${isBlurry ? "blurry" : ""}`}>
-      <div className="topNav">
-        <h2>RealtyHub</h2>
-        <button onClick={openRegistrationForm}>Register</button>
-        <button onClick={openLoginForm}>Login</button>
-        <button>Help</button>
-        <button>About us</button>
+      <div className="top-navi2">
+        <div className="h-tag1"><h2>RealtyHub</h2></div>
+
+        <div className="home" onClick={openRegistrationForm}>Register</div>
+        <br/>
+        <div className="home" onClick={openLoginForm}>Login</div>
+        <br/>
+        <div className="home">About</div>
+        <br/>
+        <div className="home">Help</div>
       </div>
       <br />
       <div className="imgContainer">
-        <h1 className="welcome">Agent, Tour, Share Apartment</h1>
-        <div>
-          <input type="text" placeholder="Enter Address or Zip Code" />
+        <h1 className="welcome"></h1>
+        <div>need to pair or find an apartment?<input type="text" placeholder="search by price or location" />
           <img src={searchButton} alt="" onClick={search} />
         </div>
       </div>
@@ -106,14 +108,13 @@ const SignUp = () => {
             </button>
             <form className="form">
               <h2>Welcome to RealtyHub</h2>
-              <img className="house" src={house} alt="" />
               <input type="email" placeholder=" Enter Email" value={email} onChange={e => setEmail(e.target.value)} />
               <input type="password" placeholder=" Create Password" value={password} onChange={e => setPassword(e.target.value)} />
               <div className="passwordInstruction">
-                Atleast 8 characters <br />
+                at least 8 characters <br />
                 Mix of letters and numbers <br />
-                Atleast 1 special characters <br />
-                Atleast 1 uppercase and 1 lowercase
+                at least 1 special character <br />
+                at least 1 uppercase and 1 lowercase
               </div>
               <br />
               <br />
@@ -132,7 +133,6 @@ const SignUp = () => {
             </button>
             <form className="form">
               <h2>Welcome to RealtyHub</h2>
-              <img className="house" src={house} alt="" />
               <br />
               <input type="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.target.value)} />
               <br />
